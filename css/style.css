@@ -1,0 +1,146 @@
+/* Primera parte css, añadir estilo a name, clase y id */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.prose, #intro {
+    max-width: 34rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+#dynamic-tutorial{
+    width: 100%;
+    height: 250px;
+    background-color: lightseagreen;
+}
+
+
+/* Segunda parte css, combinación de selectores*/
+
+p.big{
+    font-size: 0.8rem;
+}
+
+p>.bold-text{
+    font-weight: bold;
+}
+
+.prose p {
+    text-align: justify;   
+}
+
+.prose img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Tercera parte css, pseudo clases */
+
+
+a:hover{
+    background-color: lightskyblue;
+}
+
+a, a:active{
+    color: black;
+}
+
+/* Text styling */
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#intro h1{
+    font-size: 64px;
+    margin-bottom: 0;
+}
+
+#intro h1 span{
+    letter-spacing: .05em;
+}
+
+#intro h1 span:nth-child(1){
+    display: block;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+#intro h1 span:nth-child(2){
+    font-weight: 700;
+    background: -webkit-linear-gradient(45deg,#fd72bf,#34c6e4 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#intro h1 span:nth-child(3){
+    display: block;
+    font-weight: 100;
+    letter-spacing: .1em;
+}
+
+#intro>p{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: gray;
+    text-align: center;
+}
+
+/* Box Model y Layout */
+/* Padding, Margin, Border y Content */
+.quiz-options{
+    margin: 80px 0 80px 0;
+    text-align: center;
+}
+.quiz-options button{
+    padding: 1rem;
+    border: 2px solid #949494;
+    border-radius: 0.20rem;
+    font-family: inherit;
+    font-weight: 600;
+}
+
+/* Positioning */
+header{
+    margin: 0;
+    text-align: center;
+    background-color: #e8f9fc;
+    height: 50px;
+    line-height: 50px;
+    position: sticky;
+    top: 0;
+}
+
+header a{
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: 800;
+    /* position:absolute; */
+}
+
+/* Flexbox */
+footer{
+    background-color: #f4f4f4;
+}
+
+.footer-articles{
+    display: flex;
+    justify-content: space-between;
+    margin:0 20% 0 20%;
+}
+.footer-article{
+    display: block;
+    width: 200px;
+    border: black solid 2px;
+
+}
