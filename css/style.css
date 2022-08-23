@@ -110,6 +110,14 @@ h1, h2, h3 {
     font-weight: 600;
 }
 
+#method{
+    max-width: 36rem;
+    width: 90%;
+    margin: 50px auto;
+    padding: 1rem 1rem;
+    text-align: center;
+    background-color: #f4f4f4;
+}
 /* Positioning */
 header{
     margin: 0;
