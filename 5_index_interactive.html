@@ -1,3 +1,11 @@
+<!-- 
+    Se agrega un tag input para recibir la respuesta del usuario y un boton para que pueda enviarla. 
+
+    Se agrega el tag a para añadir un link a la página principal. También se usa para poder saltar 
+    a otra parte de la página, esto se puede hacer usando el atributo href y el id de la sección a la que 
+    se quiere saltar.
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +15,7 @@
 </head>
 <body>
     <header>
+        <a href="https://pudding.cool/">The Puddling</a>
     </header>
     <div>
     </div>
@@ -22,8 +31,8 @@
         <section id="prelude">
             <p>
                 Colin Morris recently explored the difficulties of spelling by identifying 
-                Reddit comments with (sp?) next to words. It’s no surprise that Jake Gyllenhaal,
-                along with other celebrities, were atop the list. Let’s take this idea one step further.
+                Reddit comments with (sp?) next to words. It's no surprise that Jake Gyllenhaal,
+                along with other celebrities, were atop the list. Let's take this idea one step further.
             </p>
         </section>
         <section id="tutorial">
@@ -34,6 +43,9 @@
                 This chart shows over 600k attempts of people trying to search for Britney Spears. Here
                 are the 8 most common permutations of her first name, Britney. People nail the first three
                 letters—then things get interesting.
+            </p>
+            <p>
+                You can skip the tutorial and go right to the <a href="#quiz">quiz</a>.
             </p>
             <div class="tutorial">
                 <p>
@@ -49,6 +61,16 @@
             </p>
             <div class="quiz_content">
                 <div class="question_person">
+                    <img src="images/HernanValdivieso.jpg" alt="Person 1">
+                    <p>
+                        Professor
+                    </p>
+                </div>
+                <div class="question_response">
+                    <input value="v">
+                    <button class="btn">
+                        I Think I've Got It   
+                    </button>
                 </div>
                 <div class="visualization">
                     <p>
@@ -74,7 +96,7 @@
             </h3>
             <p>
                 Britney Spears search data is from Google searches circa 2011. A slightly modified scale was used 
-                to represent the flow diagrams to make all branches’ text legible, so the sizes don’t perfectly 
+                to represent the flow diagrams to make all branches' text legible, so the sizes don't perfectly 
                 represent the proportion of responses. We chose to only show the top 8 permutations of each name. 
                 Phonetic data is based on the International Phonetic Alphabet via Wikipedia. You can download the 
                 data yourself here.
@@ -91,10 +113,6 @@
             </p>
         </div>
         <div class="footer-articles">
-            <a class="footer-article"></a>
-            <a class="footer-article"></a>
-            <a class="footer-article"></a>
-            <a class="footer-article"></a>
         </div>
         <div class="footer-company">
             <div class="footer-company-links"></div>
